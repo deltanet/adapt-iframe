@@ -50,6 +50,28 @@
       "default": "",
       "inputType": "Text",
       "help": "If the dimensions of the iframe should be delegated to a child element of the iframe, use this attribute to select which child element this is."
+    },
+    "_scripts": {
+      "type":"object",
+      "required":false,
+      "properties":{
+        "_isEnabled": {
+          "type":"boolean",
+          "required":false,
+          "default": false,
+          "title": "Is Enabled",
+          "inputType": { "type": "Boolean", "options": [false, true]},
+          "validators": [],
+          "help": "Turns external scripts off. Acceptable values are true and false"
+        },
+        "_externalScripts": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "inputType": "Text",
+          "help": "Add any external scripts here"
+        }
+      }
     }
   }
 }

@@ -2,17 +2,6 @@
 
 An adapt component that loads content into an iframe
 
-
-## Installation
-
-First, be sure to install the [Adapt Command Line Interface](https://github.com/adaptlearning/adapt-cli), then from the command line run:-
-
-        adapt install adapt-iframe
-
-This component can also be installed by adding the component to the adapt.json file before running `adapt install`:
-
-        "adapt-iframe": "*"
-
 ## Usage
 
 See settings
@@ -32,7 +21,7 @@ You can use this setting to add custom classes to your template and LESS file.
 
 #### _layout
 
-This defines the position of the component in the block. Values can be `full`, `left` or `right`. 
+This defines the position of the component in the block. Values can be `full`, `left` or `right`.
 
 #### displayTitle and body
 
@@ -52,6 +41,18 @@ Specify the native width of the iframe - this is used (along with height) to mak
 #### _initialHeight
 
 Specify the native height of the iframe - this is used (along with width) to make the iframe responsive
+
+#### _scripts
+
+Contains attributes for loading external _scripts
+
+#### _isEnabled
+
+Turns external scripts off. Acceptable values are true and false
+
+#### _externalScripts
+
+Add any external scripts here. Will be embedded in a script tab within the template below the iframe.  
 
 ## Limitations
 

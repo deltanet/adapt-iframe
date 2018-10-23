@@ -2,5 +2,10 @@
     {{> component this}}
     <div class="iframe-container">
         <iframe src={{this._src}}></iframe>
+        {{#if _scripts._isEnabled}}
+          {{#if _scripts._externalScripts}}
+        <script src="{{{_scripts._externalScripts}}}" charset="UTF-8"></script>
+          {{/if}}
+        {{/if}}
     </div>
 </div>
